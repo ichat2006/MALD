@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>LSSupportsOpeningDocumentsInPlace</key>
+	<true/>
+	<key>UIBackgroundModes - 2</key>
+	<array>
+		<string>location</string>
+	</array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>The device in this picture is designed to help people with Ultra Low Vision to navigate from place to place independently without needing much physical assistance from others. The devices is controlled by a smart phone app which communicates with device (using smart phone). The device identifies any objects or other safety hazard or obstruction in the path way of the user.  The smart phone app uses map to provide user turn-by-turn directions from source to destination and does not store any data outside smart phone.</string>
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>The device in this picture is designed to help people with Ultra Low Vision to navigate from place to place independently without needing much physical assistance from others. The devices is controlled by a smart phone app which communicates with device (using smart phone). The device identifies any objects or other safety hazard or obstruction in the path way of the user.  The smart phone app uses map to provide user turn-by-turn directions from source to destination and does not store any data outside smart phone.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>The device in this picture is designed to help people with Ultra Low Vision to navigate from place to place independently without needing much physical assistance from others. The devices is controlled by a smart phone app which communicates with device (using smart phone). The device identifies any objects or other safety hazard or obstruction in the path way of the user.  The smart phone app uses map to provide user turn-by-turn directions from source to destination and does not store any data outside smart phone.</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>fetch</string>
+	</array>
+</dict>
+</plist>

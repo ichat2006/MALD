@@ -1,0 +1,6 @@
+framework module Pods_MALD {
+  umbrella header "Pods-MALD-umbrella.h"
+
+  export *
+  module * { export * }
+}

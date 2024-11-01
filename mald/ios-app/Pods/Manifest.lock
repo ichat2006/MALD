@@ -1,0 +1,24 @@
+PODS:
+  - IQKeyboardManagerSwift (6.5.10)
+  - Socket.IO-Client-Swift (16.1.0):
+    - Starscream (~> 4.0.6)
+  - Starscream (4.0.6)
+
+DEPENDENCIES:
+  - IQKeyboardManagerSwift
+  - Socket.IO-Client-Swift (~> 16.1.0)
+
+SPEC REPOS:
+  trunk:
+    - IQKeyboardManagerSwift
+    - Socket.IO-Client-Swift
+    - Starscream
+
+SPEC CHECKSUMS:
+  IQKeyboardManagerSwift: 52962c76ab33532f15ad9f3ff4e5715eda5335bb
+  Socket.IO-Client-Swift: ee4b8f80a3db18dd7f32b266ddf273310609443c
+  Starscream: fb2c4510bebf908c62bd383bcf05e673720e91fd
+
+PODFILE CHECKSUM: 477d5353f71cf7d7509a8b1392e9a69502169463
+
+COCOAPODS: 1.15.2

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="MALD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xZ8-jg-2oa">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="104"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="749" text="Navigation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rnn-7k-Hc3">
+                                        <rect key="frame" x="4" y="8" width="367" height="27.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lets proceed to  your destination" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WW6-v0-nIG">
+                                        <rect key="frame" x="8" y="51.5" width="359" height="44.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="104" id="3u9-gh-zMc"/>
+                                    <constraint firstItem="WW6-v0-nIG" firstAttribute="leading" secondItem="xZ8-jg-2oa" secondAttribute="leading" constant="8" id="7rz-kO-qCL"/>
+                                    <constraint firstItem="Rnn-7k-Hc3" firstAttribute="top" secondItem="xZ8-jg-2oa" secondAttribute="top" constant="8" id="BaZ-0c-Src"/>
+                                    <constraint firstAttribute="trailing" secondItem="Rnn-7k-Hc3" secondAttribute="trailing" constant="4" id="Ft7-rs-aaX"/>
+                                    <constraint firstAttribute="bottom" secondItem="WW6-v0-nIG" secondAttribute="bottom" constant="8" id="OeP-bX-Jgn"/>
+                                    <constraint firstItem="WW6-v0-nIG" firstAttribute="top" secondItem="Rnn-7k-Hc3" secondAttribute="bottom" constant="16" id="QsN-hg-aXS"/>
+                                    <constraint firstItem="Rnn-7k-Hc3" firstAttribute="leading" secondItem="xZ8-jg-2oa" secondAttribute="leading" constant="4" id="XRA-Mb-1km"/>
+                                    <constraint firstAttribute="trailing" secondItem="WW6-v0-nIG" secondAttribute="trailing" constant="8" id="kJF-go-orq"/>
+                                </constraints>
+                            </view>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="IEL-NT-xHG">
+                                <rect key="frame" x="0.0" y="104" width="294" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="luJ-yF-Skc"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" showsUserLocation="YES" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gcf-Oh-9qz">
+                                <rect key="frame" x="0.0" y="160" width="375" height="507"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugm-tP-eXH">
+                                <rect key="frame" x="295" y="104" width="80" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Xer-Dz-D0g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Saved location">
+                                    <color key="titleColor" red="0.0039215686269999999" green="0.1843137255" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="savedLocationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6SZ-FM-YoF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6m7-pc-WXW"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gcf-Oh-9qz" firstAttribute="top" secondItem="ugm-tP-eXH" secondAttribute="bottom" id="5S4-Fd-coR"/>
+                            <constraint firstItem="6m7-pc-WXW" firstAttribute="trailing" secondItem="xZ8-jg-2oa" secondAttribute="trailing" id="5y9-zA-IZE"/>
+                            <constraint firstItem="6m7-pc-WXW" firstAttribute="trailing" secondItem="gcf-Oh-9qz" secondAttribute="trailing" id="8Wv-Ip-pDR"/>
+                            <constraint firstItem="xZ8-jg-2oa" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="DHP-hn-AgG"/>
+                            <constraint firstItem="xZ8-jg-2oa" firstAttribute="leading" secondItem="6m7-pc-WXW" secondAttribute="leading" id="Dve-bB-DYS"/>
+                            <constraint firstItem="IEL-NT-xHG" firstAttribute="top" secondItem="xZ8-jg-2oa" secondAttribute="bottom" id="Ehk-Jh-HKm"/>
+                            <constraint firstItem="6m7-pc-WXW" firstAttribute="bottom" secondItem="gcf-Oh-9qz" secondAttribute="bottom" id="KIK-hI-elY"/>
+                            <constraint firstItem="ugm-tP-eXH" firstAttribute="leading" secondItem="IEL-NT-xHG" secondAttribute="trailing" constant="1" id="KdS-Ts-sxd"/>
+                            <constraint firstItem="gcf-Oh-9qz" firstAttribute="leading" secondItem="6m7-pc-WXW" secondAttribute="leading" id="XyE-VB-s76"/>
+                            <constraint firstItem="IEL-NT-xHG" firstAttribute="leading" secondItem="6m7-pc-WXW" secondAttribute="leading" id="ZDh-gQ-x4e"/>
+                            <constraint firstItem="gcf-Oh-9qz" firstAttribute="top" secondItem="IEL-NT-xHG" secondAttribute="bottom" id="cyA-zO-ln9"/>
+                            <constraint firstItem="ugm-tP-eXH" firstAttribute="trailing" secondItem="6m7-pc-WXW" secondAttribute="trailing" id="lXE-Bc-vDJ"/>
+                            <constraint firstItem="ugm-tP-eXH" firstAttribute="top" secondItem="xZ8-jg-2oa" secondAttribute="bottom" id="wol-yC-gS5"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <connections>
+                        <outlet property="directionLabel" destination="WW6-v0-nIG" id="hBk-G0-BRs"/>
+                        <outlet property="mapView" destination="gcf-Oh-9qz" id="ycs-Fh-LiK"/>
+                        <outlet property="searchBar" destination="IEL-NT-xHG" id="QsS-fN-SNR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+</document>
