@@ -1,9 +1,9 @@
 import smtplib, ssl
 
 port = 465  # For starttls
-smtp_server = "smtp.gmail.com"
-sender_email = "ravi11dec1990@gmail.com"
-receiver_email = "ravi11dec1990@gmail.com"
+smtp_server = "******.gmail.com"
+sender_email = "********@gmail.com"
+receiver_email = "*******@gmail.com"
 password = "Enter your password"
 message = """\
 Subject: Hi there
